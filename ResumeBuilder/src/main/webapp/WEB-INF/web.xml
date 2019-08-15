@@ -28,6 +28,12 @@
   	<description></description>
   	<servlet-class>com.rb.controller.PublicProfile</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>InsertData</servlet-name>
+  	<display-name>InsertData</display-name>
+  	<description></description>
+  	<servlet-class>com.rb.controller.InsertData</servlet-class>
+  </servlet>
   
   <servlet-mapping>
   	<servlet-name>AddData</servlet-name>
@@ -44,6 +50,10 @@
   <servlet-mapping>
   	<servlet-name>PublicProfile</servlet-name>
   	<url-pattern>/publicProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InsertData</servlet-name>
+  	<url-pattern>/InsertData</url-pattern>
   </servlet-mapping>
   
 </web-app>
