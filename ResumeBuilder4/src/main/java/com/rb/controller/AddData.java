@@ -58,7 +58,7 @@ public class AddData extends HttpServlet {
   
             // Displaying JSON String 
             //out.println(jsonStr); 
-			FileWriter file=new FileWriter("E:\\one.json");
+			FileWriter file=new FileWriter("E:\\programming\\JSON-FILES\\"+name+".json");
 			 
             file.write(jsonStr);
             file.flush();

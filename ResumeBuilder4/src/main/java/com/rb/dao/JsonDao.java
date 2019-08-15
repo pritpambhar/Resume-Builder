@@ -29,7 +29,7 @@ public class JsonDao {
 		{
 			//JSONArray a = (JSONArray)parser.parse(new FileReader("E:\\one.json"));
 			
-			Object obj  = parser.parse(new FileReader("E:\\one.json"));
+			Object obj  = parser.parse(new FileReader("E:\\programming\\JSON-FILES\\prit.json"));
 			JSONArray array = new JSONArray();
 			array.add(obj);
 			 for (Object o : array)
