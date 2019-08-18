@@ -43,10 +43,8 @@ public class PublicProfile extends HttpServlet {
 		
 		JsonDao jdao=new JsonDao();
 		jdao.setPublicProfile(linkdin,github,website);
+		response.sendRedirect("education.jsp");
 		
-		jdao.show();
-		
-		out.print("JSON file updated successfully");
 		//request.setAttribute("js", js);
 		
 		//JSONObject obj = new JSONObject();

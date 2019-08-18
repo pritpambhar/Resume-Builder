@@ -37,7 +37,7 @@
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<button class="contact100-btn-show">
-			<i class="" aria-hidden="true">General Information</i>
+			<i class="" aria-hidden="true">Education</i>
 		</button>
 
 		<div class="wrap-contact100">
@@ -45,38 +45,92 @@
 				<i class="fa fa-close" aria-hidden="true"></i>
 			</button>
 
-			<form class="contact100-form validate-form" action="publicProfile.html"> 
-				<span class="contact100-form-title">
-					General Information
-				</span>
+			<form class="contact100-form validate-form" action="education"> 
 
+				<span class="contact100-form-title" style="font-size: 25px; color: red;">
+					Secondary
+					<br>
+				</span>
+				<br>
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>First Name</b></span>
-					<input class="input100" type="text" name="name" placeholder="Enter your first name">
+					<span class="label-input100" style="color: black;"><b>Institute Name</b></span>
+					<input class="input100" type="text" name="secondary_institute_name" placeholder="Enter your Institute name">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>Last Name</b></span>
-					<input class="input100" type="text" name="name" placeholder="Enter your last name">
+					<span class="label-input100" style="color: black;"><b>Board</b></span>
+					<input class="input100" type="text" name="board_name" placeholder="Enter your board name">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<span class="label-input100" style="color: black;"><b>Email</b></span>
-					<input class="input100" type="text" name="email" placeholder="Enter your email addess">
+					<span class="label-input100" style="color: black;"><b>CGPA / Percentage</b></span>
+					<input class="input100" type="text" name="secondary_cgpa" placeholder="Enter your cgpa / Percentage">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>Mobile</b></span>
-					<input class="input100" type="text" name="name" placeholder="Enter your mobile number">
+					<span class="label-input100" style="color: black;"><b>Year Of Passing</b></span>
+					<input class="input100" type="text" name="secondary_year" placeholder="Enter your year of Passing">
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100" style="color: black;"><b>Address</b></span>
-					<input type="text" class="input100" name="message" placeholder="Enter your addess">	
+				<span class="contact100-form-title" style="font-size: 25px; color: red;">
+					Higher Secondary / Diploma
+					<br>
+				</span>
+				<br>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100" style="color: black;"><b>Institute Name</b></span>
+					<input class="input100" type="text" name="Hsecondary_institute_name" placeholder="Enter your Institute name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100" style="color: black;"><b>Board / University</b></span>
+					<input class="input100" type="text" name="Hboard_name" placeholder="Enter your board / university name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100" style="color: black;"><b>CGPA / Percentage</b></span>
+					<input class="input100" type="text" name="Hsecondary_cgpa" placeholder="Enter your cgpa / Percentage">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100" style="color: black;"><b>Year Of Passing</b></span>
+					<input class="input100" type="text" name="Hsecondary_year" placeholder="Enter your year of Passing">
+					<span class="focus-input100"></span>
+				</div>
+
+				<span class="contact100-form-title" style="font-size: 25px; color: red;">
+					Graduation
+					<br>
+				</span>
+				<br>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100" style="color: black;"><b>Institute Name</b></span>
+					<input class="input100" type="text" name="graduation_institute_name" placeholder="Enter your Institute name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100" style="color: black;"><b>University</b></span>
+					<input class="input100" type="text" name="university_name" placeholder="Enter your university name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100" style="color: black;"><b>CGPA / Percentage</b></span>
+					<input class="input100" type="text" name="Gsecondary_cgpa" placeholder="Enter your cgpa / Percentage">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100" style="color: black;"><b>Year Of Passing</b></span>
+					<input class="input100" type="text" name="graduation_year" placeholder="Enter your year of Passing">
 					<span class="focus-input100"></span>
 				</div>
 

@@ -30,7 +30,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body style="background-image: url('images/bg7.jpg');background-size: cover;">
+<body style="background-image: url('images/Reume Builder Images/68935066_6130258566718_7832501784907087872_n.png');background-size: cover;">
 
 
 	<div class="container-contact100">

@@ -34,6 +34,12 @@
   	<description></description>
   	<servlet-class>com.rb.controller.InsertData</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Education</servlet-name>
+  	<display-name>Education</display-name>
+  	<description></description>
+  	<servlet-class>com.rb.controller.Education</servlet-class>
+  </servlet>
   
   <servlet-mapping>
   	<servlet-name>AddData</servlet-name>
@@ -54,6 +60,10 @@
   <servlet-mapping>
   	<servlet-name>InsertData</servlet-name>
   	<url-pattern>/InsertData</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Education</servlet-name>
+  	<url-pattern>/education</url-pattern>
   </servlet-mapping>
   
 </web-app>
