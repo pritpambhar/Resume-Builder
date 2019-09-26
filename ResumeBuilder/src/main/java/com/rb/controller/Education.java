@@ -54,7 +54,8 @@ public class Education extends HttpServlet {
 		jdao.setGraduation(graduation_institute_name,university_name,Gsecondary_cgpa,graduation_year);
 		
 		jdao.create();
-		out.print("JSON file updated successfully");
+		response.sendRedirect("internship.jsp");
+		//out.print("JSON file updated successfully");
 		//response.sendRedirect("PublicProfile.jsp");
 		
 		

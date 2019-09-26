@@ -37,7 +37,7 @@
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<button class="contact100-btn-show">
-			<i class="" aria-hidden="true">General Information</i>
+			<i class="" aria-hidden="true">Projects Undertaken</i>
 		</button>
 
 		<div class="wrap-contact100">
@@ -47,36 +47,49 @@
 
 			<form class="contact100-form validate-form" action="publicProfile.html"> 
 				<span class="contact100-form-title">
-					General Information
+					Projects Undertaken
 				</span>
-
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>First Name</b></span>
-					<input class="input100" type="text" name="name" placeholder="Enter your first name">
+				
+				<div class="" data-validate="Name is required">
+					<span style="color: black;"><b> Project-1</b></span>
+				</div>
+				<br>
+				<br>
+				
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100" style="color: black;"><b>Definition</b></span>
+					<input class="input100" type="text" name="project-definition" placeholder="Enter your project definition">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>Last Name</b></span>
-					<input class="input100" type="text" name="name" placeholder="Enter your last name">
+					<span class="label-input100" style="color: black;"><b>Duration</b></span>				
+					<input class="input100" type="date" name="project-from" placeholder="from">
 					<span class="focus-input100"></span>
 				</div>
-
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<span class="label-input100" style="color: black;"><b>Email</b></span>
-					<input class="input100" type="text" name="email" placeholder="Enter your email addess">
-					<span class="focus-input100"></span>
-				</div>
-
+				
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>Mobile</b></span>
-					<input class="input100" type="text" name="name" placeholder="Enter your mobile number">
+					<span class="label-input100" style="color: black;"><b></b></span>
+					<input class="input100" type="date" name="project-to" placeholder="to">
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100" style="color: black;"><b>Guide Name</b></span>
+					<input class="input100" type="text" name="guide-name" placeholder="Enter your guide name">
+					<span class="focus-input100"></span>
+				</div>
+				
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100" style="color: black;"><b>External Link</b></span>
+					<input class="input100" type="text" name="external-link" placeholder="for ex. :- Github">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100" style="color: black;"><b>Address</b></span>
-					<input type="text" class="input100" name="message" placeholder="Enter your addess">	
+					<span class="label-input100" style="color: black;"><b>Brief About Project</b></span>
+					<input type="text" class="input100" name="project-brief" placeholder="Explain your projet in brief">	
 					<span class="focus-input100"></span>
 				</div>
 
@@ -90,8 +103,19 @@
 						</span>
 					</button>
 				</div>
+				
+				<div class="container-contact100-form-btn">
+					
+				</div>
 			</form>
-
+			<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Add Project
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+			</div>
 		</div>
 	</div>
 
