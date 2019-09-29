@@ -20,6 +20,7 @@
       <a class="btn text-danger" href="achievements.jsp" style="width: 124px;"><span style=" margin-left:-8px;">Achievements</span></a>
       <a class="btn text-danger" href="certifications.jsp" style="width: 124px;">Certifications</a>
       <a class="btn text-danger" href="#" style="width: 124px;">Interests</a>
+      <a class="btn text-danger" href="extracuricular.jsp" style="width: 124px;">EC</a>
       <a class="btn text-danger" href="declaration.jsp" style="width: 124px;">Declaration</a>
     </div>
   </div>

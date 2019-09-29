@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ include file="includes/navbar.jsp" %>
+	<%@ include file="includes/sidebar.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,14 +32,14 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body style="background-image: url('images/bg7.jpg');background-size: cover;">
+<body style="background-image: url('images/Reume Builder Images/coaching-and-developing-employees-1200x630.png');background-size: cover;">
 
 
 	<div class="container-contact100">
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<button class="contact100-btn-show">
-			<i class="" aria-hidden="true">General Information</i>
+			<i class="" aria-hidden="true">Achievements <a>click here</a> </i>
 		</button>
 
 		<div class="wrap-contact100">
@@ -45,53 +47,66 @@
 				<i class="fa fa-close" aria-hidden="true"></i>
 			</button>
 
-			<form class="contact100-form validate-form" action="publicProfile.html"> 
+			<form class="contact100-form validate-form" action=""> 
 				<span class="contact100-form-title">
-					General Information
+					Achievements
 				</span>
 
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>First Name</b></span>
-					<input class="input100" type="text" name="name" placeholder="Enter your first name">
-					<span class="focus-input100"></span>
+				<div class="form-row">
+					
+					<div class="col-12">
+						<p style="margin-left:85px;"><i>Example : - <b>GTU Techfest-2018 : </b> Secured 1st Rank in Cryptohunt (Decoding Event) at Zonal Level.</i></p>
+						<br>
+					</div>
+					
+					<div class="col-3">
+						<input type="text" class="form-control" placeholder="Keyword">
+					</div>
+					<div class="col-9">
+						<input type="text" class="form-control" placeholder="Description">
+						<br>
+					</div>
+					
+					
+					<div class="col-3">
+						<input type="text" class="form-control" placeholder="Keyword">
+					</div>
+					<div class="col-9">
+						<input type="text" class="form-control" placeholder="Description">
+						<br>
+					</div>
+					
+					<div class="col-3">
+						<input type="text" class="form-control" placeholder="Keyword">
+					</div>
+					<div class="col-9">
+						<input type="text" class="form-control" placeholder="Description">
+						<br>
+					</div>
+					
+					<div class="col-3">
+						<input type="text" class="form-control" placeholder="Keyword">
+					</div>
+					<div class="col-9">
+						<input type="text" class="form-control" placeholder="Description">
+						<br>
+					</div>
+					
+					<div class="col-2">
+						<button class="contact100-form-btn btn-primary" style="background-color:orange;">add more + </button>
+					</div>
+					<div class="col-8">
+						
+					</div>
+					<div class="col-2">
+						<button class="contact100-form-btn" type="submit">Submit</button>
+						<br>
+					</div>
+					
 				</div>
 
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>Last Name</b></span>
-					<input class="input100" type="text" name="name" placeholder="Enter your last name">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<span class="label-input100" style="color: black;"><b>Email</b></span>
-					<input class="input100" type="text" name="email" placeholder="Enter your email addess">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>Mobile</b></span>
-					<input class="input100" type="text" name="name" placeholder="Enter your mobile number">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100" style="color: black;"><b>Address</b></span>
-					<input type="text" class="input100" name="message" placeholder="Enter your addess">	
-					<span class="focus-input100"></span>
-				</div>
-
-				
-
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						<span>
-							Submit
-							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-						</span>
-					</button>
-				</div>
 			</form>
-
+			</div>
 		</div>
 	</div>
 

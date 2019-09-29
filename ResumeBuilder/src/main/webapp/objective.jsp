@@ -41,17 +41,17 @@
 			<form class=" validate-form">
 
 
-				<input class="" type="radio" name="ca-obj">To secure a challenging
+				<input class="" type="radio" name="ca-obj"> To secure a challenging
 				position in a reputable organization to expand my learnings,
 				knowledge, and skills. <br> <br> 
 				
 				<input class=""
-					type="radio" name="ca-obj">Secure a responsible career opportunity to
+					type="radio" name="ca-obj"> Secure a responsible career opportunity to
 				fully utilize my training and skills, while making a significant
 				contribution to the success of the company. <br> <br> 
 				
 				<input
-					class="" type="radio" name="ca-obj">To secure employment with a reputable
+					class="" type="radio" name="ca-obj"> To secure employment with a reputable
 				company, where I can utilize my skills and business studies
 				background to the maximum. <br> <br>
 				
