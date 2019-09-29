@@ -58,7 +58,16 @@ public class JsonDao {
 		jObj.put("graduation_year", graduation_year);
 		return;
 	}
-
+	
+	public void setInternshipInfo(String company,String internship_from,String internship_to,String post,String work_summary)
+	{
+		jObj.put("company", company);
+		jObj.put("internship_from", internship_from);
+		jObj.put("internship_to", internship_to);
+		jObj.put("post", post);
+		jObj.put("work_summary", work_summary);
+		return;
+	}
 	public void create() {
 		System.out.println(jObj);
 		ObjectMapper Obj = new ObjectMapper();

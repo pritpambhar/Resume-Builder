@@ -40,6 +40,18 @@
   	<description></description>
   	<servlet-class>com.rb.controller.Education</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Internship</servlet-name>
+  	<display-name>Internship</display-name>
+  	<description></description>
+  	<servlet-class>com.rb.controller.Internship</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProjectUndertaken</servlet-name>
+  	<display-name>ProjectUndertaken</display-name>
+  	<description></description>
+  	<servlet-class>com.rb.controller.ProjectUndertaken</servlet-class>
+  </servlet>
   
   <servlet-mapping>
   	<servlet-name>AddData</servlet-name>
@@ -64,6 +76,14 @@
   <servlet-mapping>
   	<servlet-name>Education</servlet-name>
   	<url-pattern>/education</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Internship</servlet-name>
+  	<url-pattern>/internship</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProjectUndertaken</servlet-name>
+  	<url-pattern>/projectUndertaken</url-pattern>
   </servlet-mapping>
   
 </web-app>

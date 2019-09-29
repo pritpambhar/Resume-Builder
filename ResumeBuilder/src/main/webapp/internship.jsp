@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+     <%@ include file="includes/navbar.jsp" %>
+	<%@ include file="includes/sidebar.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,14 +32,14 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body style="background-image: url('images/bg7.jpg');background-size: cover;">
+<body style="background-image: url('images/Reume Builder Images/bg-cover-article1.png');background-size: cover;">
 
 
 	<div class="container-contact100">
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<button class="contact100-btn-show">
-			<i class="" aria-hidden="true">Internships</i>
+			<i class="" aria-hidden="true">Internships <a>click here</a> </i>
 		</button>
 
 		<div class="wrap-contact100">

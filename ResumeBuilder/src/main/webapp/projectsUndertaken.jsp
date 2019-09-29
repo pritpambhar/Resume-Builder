@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ include file="includes/navbar.jsp" %>
+	<%@ include file="includes/sidebar.jsp" %>
+	<%@ include file="includes/pop-up.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,25 +39,40 @@
 	<div class="container-contact100">
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
-		<button class="contact100-btn-show">
-			<i class="" aria-hidden="true">Projects Undertaken</i>
+		<button class="contact100-btn-show" onclick=numberOfProjects()>
+			<i class="" aria-hidden="true">Projects Undertaken <a>click here</a> </i>
 		</button>
 
 		<div class="wrap-contact100">
 			<button class="contact100-btn-hide">
 				<i class="fa fa-close" aria-hidden="true"></i>
 			</button>
-
+			
+			<form class="contact100-form validate-form" action=""> 
+				<span class="contact100-form-title">
+					Projects Undertaken
+				</span>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100" style="color: black;"><b>Definition</b></span>
+					<input class="input100" type="text" name="project-definition" placeholder="Enter your project definition">
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn" name="psubmit">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>	
+			
+			<% if(request.getParameter("psubmit")!=null) {%>
 			<form class="contact100-form validate-form" action="publicProfile.html"> 
 				<span class="contact100-form-title">
 					Projects Undertaken
 				</span>
-				
-				<div class="" data-validate="Name is required">
-					<span style="color: black;"><b> Project-1</b></span>
-				</div>
-				<br>
-				<br>
 				
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<span class="label-input100" style="color: black;"><b>Definition</b></span>
@@ -108,6 +126,7 @@
 					
 				</div>
 			</form>
+			<% } %>
 			<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
 						<span>
