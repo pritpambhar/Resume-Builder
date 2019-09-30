@@ -38,7 +38,7 @@
 	<div class="container-contact100">
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
-		<button class="contact100-btn-show">
+		<button class="contact100-btn-show" id="self-click">
 			<i class="" aria-hidden="true">Internships <a>click here</a> </i>
 		</button>
 
@@ -47,11 +47,16 @@
 				<i class="fa fa-close" aria-hidden="true"></i>
 			</button>
 
-			<form class="contact100-form validate-form" action="publicProfile.html"> 
-				<span class="contact100-form-title">
-					Internships
+			<form class=" validate-form" action="publicProfile.html"> 
+				<span class="contact100-form-title" style="margin-left:200px;">
+					Internships / Training
 				</span>
-
+				
+			<div class="contact100-form" id="first">
+				<div class=" wrap-input100 rs1-wrap-input100" style="border-bottom:0px;margin-bottom:0px;" data-validate="Name is required">
+					<span class="" style="color: red; font-size:28px;"><b><i>Internship - 1 : -</i></b></span>
+				</div>
+					
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<span class="label-input100" style="color: black;"><b>Organization / Company Name</b></span>
 					<input class="input100" type="text" name="company" placeholder="Enter your company name">
@@ -82,16 +87,19 @@
 					<span class="focus-input100"></span>
 				</div>
 
-				
-
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						<span>
-							Submit
-							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-						</span>
-					</button>
-				</div>
+			</div>
+			<div class="contact100-form">
+				<div class="col-2">
+						<button class="contact100-form-btn btn-primary" type="button" id="add-more" style="background-color:orange;" onclick="addMore()">add more + </button>
+					</div>
+					<div class="col-8">
+						
+					</div>
+					<div class="col-2">
+						<button class="contact100-form-btn" type="submit">Submit</button>
+						<br>
+					</div>
+			</div>	
 			</form>
 
 		</div>
@@ -132,6 +140,27 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
+  
+  var number=2;
+  function addMore()
+  {
+	  //var n=document.getElementById("add-more");
+	  var n=document.getElementById("first");
+	  n.innerHTML += "<div class='wrap-input100 rs1-wrap-input100' style='border-bottom:0px;margin-bottom:0px;' data-validate='Name is required'><span class='' style='color: red; font-size:28px;'><b><i>Internship - "+ number +" : -</i></b></span></div><div class='wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b>Organization / Company Name</b></span><input class='input100' type='text' name='company' placeholder='Enter your company name'><span class='focus-input100'></span></div><div class='wrap-input100 rs1-wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b>Duration</b></span><input class='input100' type='date' name='internship-from' placeholder='Enter your joining date'><span class='focus-input100'></span></div><div class='wrap-input100 rs1-wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b></b></span><input class='input100' type='date' name='internship-to' placeholder='Enter your completion date'><span class='focus-input100'></span></div><div class='wrap-input100 validate-input' data-validate = 'Valid email is required: ex@abc.xyz'><span class='label-input100' style='color: black;'><b>Post</b></span><input class='input100' type='text' name='post' placeholder='Enter your Post'><span class='focus-input100'></span></div><div class='wrap-input100 validate-input' data-validate = 'Message is required'><span class='label-input100' style='color: black;'><b>Work Summary</b></span><input type='text' class='input100' name='work-summary' placeholder='Enter your work summary'><span class='focus-input100'></span></div>";
+  	  number++;
+  }
+  //setTimeout(document.getElementById('self-click').click(),100000);
+var iteration = true;
+var time = new Date();
+var delay = 5000; // 5 secondes
+
+while(iteration) {
+    if(time.getTime() + 1000 < new Date().getTime()) {
+         iteration = false;
+    }
+}
+
+document.getElementById('self-click').click();
 </script>
 
 </body>

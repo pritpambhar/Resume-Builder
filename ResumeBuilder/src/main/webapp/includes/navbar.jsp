@@ -16,7 +16,7 @@
       <a class="btn text-danger" href="projectsUndertaken.jsp" style="width: 124px;">Projects</a>
       <a class="btn text-danger" href="objective.jsp" style="width: 124px;">Objective</a>
       <a class="btn text-danger" href="POR.jsp" style="width: 124px;">POR</a>
-      <a class="btn text-danger" href="technicalSkills.jsp" style="width: 124px;">Skills</a>
+      <a class="btn text-danger" href="skills.jsp" style="width: 124px;">Skills</a>
       <a class="btn text-danger" href="achievements.jsp" style="width: 124px;"><span style=" margin-left:-8px;">Achievements</span></a>
       <a class="btn text-danger" href="certifications.jsp" style="width: 124px;">Certifications</a>
       <a class="btn text-danger" href="#" style="width: 124px;">Interests</a>

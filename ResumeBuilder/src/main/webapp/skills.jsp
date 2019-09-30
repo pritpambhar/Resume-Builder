@@ -39,7 +39,7 @@
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<button class="contact100-btn-show">
-			<i class="" aria-hidden="true">Certifications <a>click here</a> </i>
+			<i class="" aria-hidden="true">Skills <a>click here</a> </i>
 		</button>
 
 		<div class="wrap-contact100">
@@ -49,13 +49,24 @@
 
 			<form class="contact100-form validate-form" action="publicProfile.html"> 
 				<span class="contact100-form-title">
-					Certifications
+					Skills
 				</span>
 
-				<div class="form-row">
-					
+			<div class="form-row" id="first">
+			
 					<div class="col-12">
-						<p style="margin-left:85px;"><i>Example : - <b>Entrepreneurship Workshop : </b> Workshop on ""Start-up - A Step Towards Entrepreneur".</i></p>
+					<table style="margin-left:125px;color:gray;">
+					<tr>
+						<td rowspan="2"><i>Example : - &nbsp;&nbsp;</i></td>
+						<td><b><i> - Programming Languages : </b> C, C++, JAVA, PHP, Python.</i></td>
+					</tr>
+					<tr>
+						<td><b><i> - Web Technologies : </b> HTML, CSS, JavaScript, Bootstrap.</i></td>
+					</tr>
+					
+					</table>
+					
+					<!--  	<p style="margin-left:85px;"><i>Example : - <b>Programming Languages : </b> C, C++, JAVA, PHP, Python.</i><br><b>Web Technologies : </b> HTML, CSS, JavaScript, Bootstrap.</i></p></p> -->
 						<br>
 					</div>
 					
@@ -91,9 +102,10 @@
 						<input type="text" class="form-control" placeholder="Description">
 						<br>
 					</div>
-					
+				</div>
+				<div class="form-row col-12">
 					<div class="col-2">
-						<button class="contact100-form-btn btn-primary" style="background-color:orange;">add more + </button>
+						<button class="contact100-form-btn btn-primary" type="button" id="add-more" style="background-color:orange;" onclick="addMore()">add more + </button>
 					</div>
 					<div class="col-8">
 						
@@ -102,13 +114,12 @@
 						<button class="contact100-form-btn" type="submit">Submit</button>
 						<br>
 					</div>
-					
 				</div>
-
+				
 			</form>
 			</div>
 		</div>
-	</div>
+	
 
 
 
@@ -145,6 +156,15 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
+  
+  var number=5;
+  function addMore()
+  {
+	  //var n=document.getElementById("add-more");
+	  var n=document.getElementById("first");
+	  n.innerHTML += "<div class='col-3'><input type='text' class='form-control' name='skill-keyword"+number+"' placeholder='Keyword'></div><div class='col-9'><input type='text' class='form-control' placeholder='Description'><br></div>";
+  	  number++;
+  }
 </script>
 
 </body>
