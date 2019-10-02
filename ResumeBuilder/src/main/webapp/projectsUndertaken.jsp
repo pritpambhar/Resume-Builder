@@ -33,13 +33,13 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body style="background-image: url('images/bg7.jpg');background-size: cover;">
+<body style="background-image: url('images/Reume Builder Images/how-elearning-can-boost-your-tech-career.jpg');background-size: cover;">
 
 
 	<div class="container-contact100">
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
-		<button class="contact100-btn-show" onclick=numberOfProjects()>
+		<button class="contact100-btn-show">
 			<i class="" aria-hidden="true">Projects Undertaken <a>click here</a> </i>
 		</button>
 
@@ -48,32 +48,17 @@
 				<i class="fa fa-close" aria-hidden="true"></i>
 			</button>
 			
-			<form class="contact100-form validate-form" action=""> 
-				<span class="contact100-form-title">
-					Projects Undertaken
-				</span>
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>Definition</b></span>
-					<input class="input100" type="text" name="project-definition" placeholder="Enter your project definition">
-					<span class="focus-input100"></span>
-				</div>
-				
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn" name="psubmit">
-						<span>
-							Submit
-							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-						</span>
-					</button>
-				</div>
-			</form>	
-			
-			<% if(request.getParameter("psubmit")!=null) {%>
+		
 			<form class="contact100-form validate-form" action="publicProfile.html"> 
 				<span class="contact100-form-title">
 					Projects Undertaken
 				</span>
 				
+			<div class="contact100-form" id="first">	
+				<div class=" wrap-input100 rs1-wrap-input100" style="border-bottom:0px;margin-bottom:0px;" data-validate="Name is required">
+					<span class="" style="color: red; font-size:28px;"><b><i>Project - 1 : -</i></b></span>
+				</div>
+					
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<span class="label-input100" style="color: black;"><b>Definition</b></span>
 					<input class="input100" type="text" name="project-definition" placeholder="Enter your project definition">
@@ -110,31 +95,21 @@
 					<input type="text" class="input100" name="project-brief" placeholder="Explain your projet in brief">	
 					<span class="focus-input100"></span>
 				</div>
-
-				
-
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						<span>
-							Submit
-							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-						</span>
-					</button>
-				</div>
-				
-				<div class="container-contact100-form-btn">
-					
-				</div>
-			</form>
-			<% } %>
-			<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						<span>
-							Add Project
-							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-						</span>
-					</button>
 			</div>
+			<div class="contact100-form" style="height:0px; margin-bottom:-100px; margin-top:-80px;">
+				<div class="col-2">
+						<button class="contact100-form-btn btn-primary" type="button" id="add-more" style="background-color:orange;" onclick="addMore()">add more + </button>
+					</div>
+					<div class="col-8">
+						
+					</div>
+					<div class="col-2">
+						<button style="margin-left:-50px;" class="contact100-form-btn" type="submit">Submit</button>
+						<br>
+					</div>
+			</div>	
+				
+			</form>
 		</div>
 	</div>
 
@@ -173,6 +148,15 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
+  
+  var number=2;
+  function addMore()
+  {
+	  //var n=document.getElementById("add-more");
+	  var n=document.getElementById("first");
+	  n.innerHTML += "<div class=' wrap-input100 rs1-wrap-input100' style='border-bottom:0px;margin-bottom:0px;' data-validate='Name is required'><span class='' style='color: red; font-size:28px;'><b><i>Project - " +number+ " : -</i></b></span></div><div class='wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b>Definition</b></span><input class='input100' type='text' name='project-definition' placeholder='Enter your project definition'><span class='focus-input100'></span></div><div class='wrap-input100 rs1-wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b>Duration</b></span><input class='input100' type='date' name='project-from' placeholder='from'><span class='focus-input100'></span></div><div class='wrap-input100 rs1-wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b></b></span><input class='input100' type='date' name='project-to' placeholder='to'><span class='focus-input100'></span></div><div class='wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b>Guide Name</b></span><input class='input100' type='text' name='guide-name' placeholder='Enter your guide name'><span class='focus-input100'></span></div><div class='wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b>External Link</b></span><input class='input100' type='text' name='external-link' placeholder='for ex. :- Github'><span class='focus-input100'></span></div><div class='wrap-input100 validate-input' data-validate = 'Message is required'><span class='label-input100' style='color: black;'><b>Brief About Project</b></span><input type='text' class='input100' name='project-brief' placeholder='Explain your projet in brief'><span class='focus-input100'></span></div>";
+  	  number++;
+  }
 </script>
 
 </body>

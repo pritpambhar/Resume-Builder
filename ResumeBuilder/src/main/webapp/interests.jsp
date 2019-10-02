@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-     <%@ include file="includes/navbar.jsp" %>
+    <%@ include file="includes/navbar.jsp" %>
 	<%@ include file="includes/sidebar.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,14 +32,14 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body style="background-image: url('images/Reume Builder Images/bg-cover-article1.png');background-size: cover;">
+<body style="background-image: url('images/Reume Builder Images/180509.png');background-size: cover;">
 
 
 	<div class="container-contact100">
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
-		<button class="contact100-btn-show" id="self-click">
-			<i class="" aria-hidden="true">Internships <a>click here</a> </i>
+		<button class="contact100-btn-show">
+			<i class="" aria-hidden="true">&nbsp; &nbsp; Interests &nbsp; &nbsp; <a> click here </a> </i>
 		</button>
 
 		<div class="wrap-contact100">
@@ -47,63 +47,79 @@
 				<i class="fa fa-close" aria-hidden="true"></i>
 			</button>
 
-			<form class=" validate-form" action="publicProfile.html"> 
-				<span class="contact100-form-title" style="margin-left:200px;">
-					Internships / Training
+			<form class="contact100-form validate-form" action="publicProfile.html"> 
+				<span class="contact100-form-title">
+					Interests / Hobbies
 				</span>
-				
-			<div class="contact100-form" id="first">
-				<div class=" wrap-input100 rs1-wrap-input100" style="border-bottom:0px;margin-bottom:0px;" data-validate="Name is required">
-					<span class="" style="color: red; font-size:28px;"><b><i>Internship - 1 : -</i></b></span>
-				</div>
+
+			<div class="form-row" id="first">
+			
+					<div class="col-12">
+					<table style="margin-left:125px;color:gray;">
+					<tr>
+						<td rowspan="2"><i>Example : - &nbsp;&nbsp;</i></td>
+						<td><i> - Sports  </i></td>
+					</tr>
+					<tr>
+						<td><i> - Music  </i></td>
+					</tr>
 					
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>Organization / Company Name</b></span>
-					<input class="input100" type="text" name="company" placeholder="Enter your company name">
-					<span class="focus-input100"></span>
+					</table>
+					
+					<!--  	<p style="margin-left:85px;"><i>Example : - <b>Programming Languages : </b> C, C++, JAVA, PHP, Python.</i><br><b>Web Technologies : </b> HTML, CSS, JavaScript, Bootstrap.</i></p></p> -->
+						<br>
+					</div>
+					
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="interests">
+					</div>
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="interests">
+						<br>
+					</div>
+					
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="interests">
+					</div>
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="interests">
+						<br>
+					</div>					
+					
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="interests">
+					</div>
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="interests">
+						<br>
+					</div>
+					
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="interests">
+					</div>
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="interests">
+						<br>
+					</div>
+					
 				</div>
-
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b>Duration</b></span>				
-					<input class="input100" type="date" name="internship-from" placeholder="Enter your joining date">
-					<span class="focus-input100"></span>
-				</div>
-				
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100" style="color: black;"><b></b></span>
-					<input class="input100" type="date" name="internship-to" placeholder="Enter your completion date">
-					<span class="focus-input100"></span>
-				</div>
-		
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<span class="label-input100" style="color: black;"><b>Post</b></span>
-					<input class="input100" type="text" name="post" placeholder="Enter your Post">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100" style="color: black;"><b>Work Summary</b></span>
-					<input type="text" class="input100" name="work-summary" placeholder="Enter your work summary">	
-					<span class="focus-input100"></span>
-				</div>
-
-			</div>
-			<div class="contact100-form" style="height:30px; margin-top:-80px;">
-				<div class="col-2">
+				<div class="form-row col-12">
+					<div class="col-2">
 						<button class="contact100-form-btn btn-primary" type="button" id="add-more" style="background-color:orange;" onclick="addMore()">add more + </button>
 					</div>
 					<div class="col-8">
 						
 					</div>
 					<div class="col-2">
-						<button style="margin-left:-50px;" class="contact100-form-btn" type="submit">Submit</button>
+						<button class="contact100-form-btn" type="submit">Submit</button>
 						<br>
 					</div>
-			</div>	
+				</div>
+				
 			</form>
-
+			</div>
 		</div>
-	</div>
+	
 
 
 
@@ -141,26 +157,14 @@
 
   gtag('config', 'UA-23581568-13');
   
-  var number=2;
+  var number=5;
   function addMore()
   {
 	  //var n=document.getElementById("add-more");
 	  var n=document.getElementById("first");
-	  n.innerHTML += "<div class='wrap-input100 rs1-wrap-input100' style='border-bottom:0px;margin-bottom:0px;' data-validate='Name is required'><span class='' style='color: red; font-size:28px;'><b><i>Internship - "+ number +" : -</i></b></span></div><div class='wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b>Organization / Company Name</b></span><input class='input100' type='text' name='company' placeholder='Enter your company name'><span class='focus-input100'></span></div><div class='wrap-input100 rs1-wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b>Duration</b></span><input class='input100' type='date' name='internship-from' placeholder='Enter your joining date'><span class='focus-input100'></span></div><div class='wrap-input100 rs1-wrap-input100 validate-input' data-validate='Name is required'><span class='label-input100' style='color: black;'><b></b></span><input class='input100' type='date' name='internship-to' placeholder='Enter your completion date'><span class='focus-input100'></span></div><div class='wrap-input100 validate-input' data-validate = 'Valid email is required: ex@abc.xyz'><span class='label-input100' style='color: black;'><b>Post</b></span><input class='input100' type='text' name='post' placeholder='Enter your Post'><span class='focus-input100'></span></div><div class='wrap-input100 validate-input' data-validate = 'Message is required'><span class='label-input100' style='color: black;'><b>Work Summary</b></span><input type='text' class='input100' name='work-summary' placeholder='Enter your work summary'><span class='focus-input100'></span></div>";
+	  n.innerHTML += "<div class='col-6'><input type='text' class='form-control' name='skill-keyword"+number+"' placeholder='interests'></div><div class='col-6'><input type='text' class='form-control' placeholder='interests'><br></div>";
   	  number++;
   }
-  //setTimeout(document.getElementById('self-click').click(),100000);
-var iteration = true;
-var time = new Date();
-var delay = 5000; // 5 secondes
-
-while(iteration) {
-    if(time.getTime() + 1000 < new Date().getTime()) {
-         iteration = false;
-    }
-}
-
-document.getElementById('self-click').click();
 </script>
 
 </body>

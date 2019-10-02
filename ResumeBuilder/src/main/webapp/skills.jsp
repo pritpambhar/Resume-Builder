@@ -32,14 +32,14 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body style="background-image: url('images/Reume Builder Images/bg-cover-article-mobile.png');background-size: cover;">
+<body style="background-image: url('images/Reume Builder Images/180509.png');background-size: cover;">
 
 
 	<div class="container-contact100">
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<button class="contact100-btn-show">
-			<i class="" aria-hidden="true">Skills <a>click here</a> </i>
+			<i class="" aria-hidden="true">&nbsp; &nbsp; &nbsp; &nbsp; Skills &nbsp; &nbsp; &nbsp; &nbsp; <a> click here </a> </i>
 		</button>
 
 		<div class="wrap-contact100">
