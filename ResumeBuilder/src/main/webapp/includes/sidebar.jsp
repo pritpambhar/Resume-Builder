@@ -70,7 +70,7 @@ body {
 </div>
 
 <div id="main" style="margin-top:-59px;">
-  <span id="navsymb" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+  <span id="navsymb" style="font-size:30px;cursor:pointer;" onclick="">&#9776;</span>
 </div>
 
 <script>

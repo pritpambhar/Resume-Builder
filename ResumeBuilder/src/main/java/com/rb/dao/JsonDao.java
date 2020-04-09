@@ -68,6 +68,13 @@ public class JsonDao {
 		jObj.put("work_summary", work_summary);
 		return;
 	}
+	
+	public void setProject()
+	{
+		
+	}
+	
+	
 	public void create() {
 		System.out.println(jObj);
 		ObjectMapper Obj = new ObjectMapper();
